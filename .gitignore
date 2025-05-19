@@ -1,0 +1,38 @@
+# Created by venv; see https://docs.python.org/3/library/venv.html
+# Environnement virtuel
+venv/
+env/
+.env
+
+# Fichiers Python compilés
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Fichiers secrets et variables d'environnement
+*.env
+*.pem
+*service-account*.json
+
+# Logs
+*.log
+
+# Dossiers IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Systèmes d'exploitation
+.DS_Store
+Thumbs.db
+
+
+.idea
