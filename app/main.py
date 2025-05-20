@@ -1,8 +1,4 @@
-from flask import Flask, jsonify, request
-import os
-import datetime
-from app.storage import read_from_gcs, write_to_gcs
-from app.ai import generate_joke
+
 
 app = Flask(__name__)
 
