@@ -4,7 +4,10 @@ import csv
 import io
 from google.cloud import storage
 
-
+# Récupérer les variables d'environnement
+BUCKET_NAME = os.environ.get('GCS_BUCKET_NAME')
+FILE_PATH = os.environ.get('GCS_FILE_PATH')
+FILE_FORMAT = os.environ.get('GCS_FILE_FORMAT', 'json')  # 'json' ou 'csv'
 
 def get_storage_client():
     """Initialise et retourne un client Google Cloud Storage"""
