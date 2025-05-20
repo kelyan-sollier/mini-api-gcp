@@ -16,12 +16,8 @@ google-genai>=1.14.0
 Flask==2.3.3
 gunicorn==21.2.0
 python-dotenv==1.0.1
-
 google-cloud-aiplatform==1.92.0
-
-
 protobuf==4.24.4
-
 google-auth==2.27.0
 google-api-core==2.15.0
 requests==2.31.0
