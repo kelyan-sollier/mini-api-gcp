@@ -1,4 +1,8 @@
-
+import os
+import json
+import csv
+import io
+from google.cloud import storage
 
 # Récupérer les variables d'environnement
 BUCKET_NAME = os.environ.get('GCS_BUCKET_NAME')
