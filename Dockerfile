@@ -20,11 +20,10 @@ COPY requirements.txt .
 # Installer les dépendances Python
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copier le reste du code
+# Copier tout le code du projet, y compris service-account-key.json
 COPY . .
 
-# Copier la clé de compte de service dans le conteneur
-COPY service-account-key.json /app/service-account-key.json
+# Vérifier que la clé n’est pas ignorée dans .dockerignore
 
 # Définir la variable d’environnement pour l’authentification GCP
 ENV GOOGLE_APPLICATION_CREDENTIALS="/app/service-account-key.json"
